@@ -1,0 +1,445 @@
+
+/*FONT FACE*/
+@font-face
+{
+	font-family: 'Yeseva';
+	src: url('../font/Yeseva.ttf');
+}
+
+@font-face
+{
+	font-family: 'Firago';
+	src: url('../font/Firago.woff');
+}
+
+/*GENERAL*/
+*
+{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	font-family: 'Firago';
+}
+
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	background-image: url("../img/ciel.jpg");
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+/*icone, bouton et flèche de retour*/
+.fa
+{
+	color: white;
+}
+
+nav .icon
+{
+	font-size: 2em;
+	margin-top: 10px;
+}
+
+footer .icon
+{
+	font-size: 3em;
+}
+
+.fa:hover
+{
+	color: #d61c4e;
+}
+
+.fa a
+{
+	text-decoration: none;
+}
+
+.btn
+{
+	transition-duration: 500ms;
+	background-color: #d61c4e;
+	border-radius: 8px;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	box-shadow: 3px 3px 8px #444444;
+}
+
+.btn:hover
+{
+	background-color:#41BDFF/*#fdc204*/
+	;
+	box-shadow: 1px 1px 4px #777777;
+	opacity: 0.8;
+}
+
+.fleche
+{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background-image: url("../img/fleche.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:  50px;
+	height: 50px;
+}
+
+.fleche:hover
+{
+	background-image: url("../img/fleche2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#gif-etoile
+{
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	float:  right;
+	margin-right: 200px;
+	margin-top: 72px;
+	height: 200px;
+}
+
+/*MENU DE NAVIGATION*/
+nav
+{
+	background-color: #17181F;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	padding: 1em;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+nav a
+{
+	vertical-align: middle;
+	text-decoration: none;
+	/*retire les souligner*/
+	color: black;
+	font-size: 16px;
+}
+
+.time
+{
+	color: white;
+}
+
+nav a.active
+{
+	color: white;
+	background-color: #001833;
+	padding: 10px 25px;
+	border-radius: 8px;
+	font-family: 'Yeseva';
+}
+
+nav a.liencolor
+{
+	transition-duration: 500ms;
+	border-radius: 8px;
+	background-color: rgba(254, 254, 255, 0.7);
+	padding: 10px 25px;
+	font-family: 'Yeseva';
+	color: black;
+}
+
+nav a.liencolor:hover
+{
+	background-color: #41BDFF;
+	backdrop-filter: blur(50px);
+	color: white;
+}
+
+nav a.liencolor:active
+{
+	padding: 7px 22px;
+	border: solid white 2px;
+}
+
+nav #hr
+{
+	display: block;
+	unicode-bidi: isolate;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	overflow: hidden;
+	background: linear-gradient(to right,#001833, #d61c4e);
+	height: 2px;
+	margin: 2em;
+	width: 30%;
+	border: none;
+	backdrop-filter: blur(50px);
+}
+
+/*HEADER*/
+header
+{
+	height: 100vh;
+	width: 100%;
+}
+
+header h1
+{
+	color: white;
+}
+
+/*HEADER ACCUEIL*/
+header.home
+{
+	background-image: url("../img/coucou.png");
+	background-size: 40%;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: right;
+}
+
+header div.bulle p
+{
+	color: #ffffff;
+	margin: 20px 150px;
+}
+
+header.home img
+{
+	width: 50%;
+	padding-left: 6%;
+	padding-top: 4%;
+}
+
+/*HEADER HISTOIRE*/
+header.story
+{
+	width: 50%;
+	padding-left: 6%;
+	padding-top: 4%;
+}
+
+/*ARTICLE*/
+article
+{
+	margin: 10px 0px;
+}
+
+article h3, article h2
+{
+	margin: 10px 0;
+	color: #001833;
+	font-family: 'Yeseva';
+}
+
+article p
+{
+	margin: 5px 0;
+	padding: 10px 0;
+}
+
+article ul, article ol
+{
+	padding-left: 30px;
+}
+
+/*ARTICLE ACCUEIL*/
+article.about
+{
+	display: inline-block;
+	border-radius: 10px;
+	border: solid black 1px;
+	padding: 20px 20px;
+	text-align: justify;
+	background-color: rgba(254, 254, 255, 0.8);
+}
+
+.a-propos
+{
+	margin:  20px 100px 0 100px;
+}
+
+section.capacité
+{
+	margin: 20px 100px 0 100px;
+}
+
+section.capacité article
+{
+	width: 150%;
+}
+
+section.power
+{
+	margin: 20px 100px 0 100px;
+}
+
+section.power article
+{
+}
+
+.flexconteneur
+{
+	display: flex;
+	width: 100%;
+}
+
+article table
+{
+	width: 100%;
+	text-align: center;
+	border: solid black 1px;
+}
+
+article table th, article table td
+{
+	padding: 10px 0px;
+}
+
+article table th
+{
+	background-color:#41BDFF ;
+	width: 50%;
+}
+
+/*ARTICLE HISTOIRE*/
+section.storystory
+{
+	display: inline-block;
+	border-radius: 10px;
+	background-color: rgba(254, 254, 255, 0.8);
+	margin: 20px 150px;
+}
+
+section.storystory
+{
+	display: inline-block;
+	border-radius: 10px;
+	background-color: rgba(254, 254, 255, 0.8);
+	margin: 20px 150px;
+}
+
+section.storystory article
+{
+	margin: 10px;
+}
+
+/*ARTICLE CONTACT*/
+section.contactsection
+{
+	display: inline-block;
+	border-radius: 10px;
+	background-color: rgba(254, 254, 255, 0.8);
+	margin: 20px 150px;
+}
+
+section.contactsection article
+{
+	margin: 30px;
+}
+
+section.contactsection article ul
+{
+	list-style: none;
+}
+
+/*FOOTER*/
+footer
+{
+	padding: 10px 0;
+	background-color: #17181F;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 40px;
+}
+
+footer.footer-copyright
+{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+footer #newsletter
+{
+	width: 15%;
+	margin: auto;
+	padding: 20px;
+	display: block;
+	border: solid 4px #001833;
+	border-radius: 8px;
+}
+
+footer #newsletter input
+{
+	display:  block;
+	margin:  auto;
+	border-radius: 3px;
+	padding: 10px 0 10px 5px;
+	width: 100%;
+	margin-top: 20px;
+	background-color: rgba(254, 254, 255, 0.7);
+}
+
+footer #newsletter label, #newsletter button
+{
+	display:  inline;
+	width: 25%;
+}
+
+footer #newsletter  button
+{
+	transition-duration: 500ms;
+	margin-top:  20px;
+	width:  50%;
+	padding: 10px 0 10px 5px;
+	border-radius: 3px;
+	background-color: rgba(254, 254, 255, 0.80);
+}
+
+footer #newsletter button:hover
+{
+	background-color: #41BDFF;
+	color: white;
+	text-decoration: none;
+	cursor:  pointer;
+}
+
+footer #newsletter input::placeholder
+{
+	color: rgb(0,0,0,0.5);
+}
+
+footer #newsletter input:hover::placeholder
+{
+	color:  rgb(0,0,0,0.75);
+}
+
+footer #newsletter input:focus
+{
+	outline: 1px solid white;
+}
+
+footer #flex-parent
+{
+	display: flex;
+	flex-wrap:  nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 60px;
+	flex-direction: row-reverse;
+}
+
+footer #footer-facebook, footer #footer-instagram, footer #footer-twitter
+{
+	padding: 100px;
+}
